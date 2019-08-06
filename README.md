@@ -9,8 +9,7 @@ Take advantage of your Instructor and TA support during office hours and class p
 
 ## Finding Data
 
-* Dataset 1: Women's Shoe Prices https://www.kaggle.com/datafiniti/womens-shoes-prices
-* Dataset 2: Nutrition, Physical Activity and Obesity by State https://data.world/basilhayek/cdc-nutrition-physical-activity-and-obesity-by-state
+* Dataset: Nutrition, Physical Activity and Obesity by State https://data.world/basilhayek/cdc-nutrition-physical-activity-and-obesity-by-state
 
 ## Data Cleanup & Analysis
 
