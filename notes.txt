@@ -1,0 +1,25 @@
+ETL Project Notes
+
+The sources of data that you will extract from.
+	data.world. 
+	has 2 csv files
+
+The type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc).
+	cleaning - do not need all columns
+	can drop the following:
+		Loctation Desc
+		Datasource
+		Keep class OR topic
+		data_value_unit
+		data_Value_type
+		WILL NEED TO DROP NULL
+
+Tables:
+
+brands ( brands, max price, min price, site to purchase)
+online_shopping ( prices.merchants, max price, min price, brands)
+shoe_years ( 2017 prices, 2018 prices )
+
+The type of final production database to load the data into (relational or non-relational).
+
+The final tables or collections that will be used in the production database.
