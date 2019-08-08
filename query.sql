@@ -17,11 +17,8 @@ ORDER BY p DESC;
 
 -- Join tables on brand --
 
-SELECT *
-FROM (SELECT brand, AVG(max_price) AS p FROM shoes_one 
+SELECT brand, AVG(max_price), AVG(min_price) FROM shoes_one 
 GROUP BY brand
-ORDER BY p DESC)
-INNER JOIN (SELECT brand, AVG(max_price) AS p FROM shoes_two 
-GROUP BY brand
-ORDER BY p DESC)
-ON shoes_one.brand = shoes_two.brand;
+UNION
+SELECT brand, AVG(max_price), AVG(min_price)  FROM shoes_two
+GROUP BY brand;
