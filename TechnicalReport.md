@@ -53,4 +53,4 @@ To transform the data we did the following
 * We created sql files to create the empty database and tables in pgAdmin. Next, we created a database connection using sqlalchemy. 
 To load the data in the database we used the pandas command df.to_sql()
 
-* Finally, we were able to successfully query the database using pgAdmin to verify that the connection and loading was successful. 
+* Finally, we were able to successfully query the database using pgAdmin and pandas (pd.read_sql(query, connection)) to verify that the connection and loading was successful. 
