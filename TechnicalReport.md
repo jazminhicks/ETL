@@ -19,13 +19,11 @@ You will be required to submit a final technical report with the above informati
 
 ## Project Report
 
-At the end of the week, your team will submit a Final Report that describes the following:
-
-* **E**xtract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
+**Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).**
 
    * The dataset, Women's Shoe Prices, was sourced from https://www.kaggle.com/datafiniti/womens-shoes-prices. The data was formatted as 2 csv files. The csv files were downloaded to our local system and then extracted the csvs into a pandas dataframe. 
 
-* **T**ransform: what data cleaning or transformation was required.
+**Transform: what data cleaning or transformation was required.**
 
 To transform the data we did the following:
 To clean up the data we...
@@ -47,7 +45,7 @@ Lastly, to compare the information provided we merged the data files together. T
 
 This merged dataframe was also plotted for visualization. 
 
-* **L**oad: the final database, tables/collections, and why this was chosen.
+**Load: the final database, tables/collections, and why this was chosen.**
 
 We chose to load in to a relational database, postgreSQL, because both csv files had similar data and clearly related eachother
 
