@@ -23,7 +23,7 @@ At the end of the week, your team will submit a Final Report that describes the 
 
 * **E**xtract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
 
-The dataset, Women's Shoe Prices, was sourced from https://www.kaggle.com/datafiniti/womens-shoes-prices. The data was formatted as 2 csv files. The csv files were downloaded to our local system and then extracted the csvs into a pandas dataframe. 
+   * The dataset, Women's Shoe Prices, was sourced from https://www.kaggle.com/datafiniti/womens-shoes-prices. The data was formatted as 2 csv files. The csv files were downloaded to our local system and then extracted the csvs into a pandas dataframe. 
 
 * **T**ransform: what data cleaning or transformation was required.
 
