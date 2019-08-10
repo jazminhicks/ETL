@@ -25,31 +25,32 @@ You will be required to submit a final technical report with the above informati
 
 ### Transform: what data cleaning or transformation was required. ###
 
-To transform the data we did the following:
-To clean up the data we...
+To transform the data we did the following
+
+* To clean up the data we...
     * Removed duplicate rows
     * Dropped unneeded columns
     * Removed rows and columns with null values
     * Renamed the columns that were kept to be more clear
     * Changed all characters in the column "Brand" to all lowercase to ensure that all brands were properly grouped together
     
-Next we aggregated the data by...
+* Next we aggregated the data by...
     * Grouping by the column named "Brand" and queried the average max and min shoes prices
     * This data was then sorted by price to find the top brand per that dataset
    
-For visualization of the top brands by price, we also plotted this data into bar chart using Matplotlib
+* For visualization of the top brands by price, we also plotted this data into bar chart using Matplotlib
 
-The above was done for both datasets 1 and 2. 
+* The above was done for both datasets 1 and 2. 
 
-Lastly, to compare the information provided we merged the data files together. The first dataset contained shoe price informaiton for 2018 and the 2nd for 2019.
+* Lastly, to compare the information provided we merged the data files together. The first dataset contained shoe price informaiton for 2018 and the 2nd for 2019.
 
-This merged dataframe was also plotted for visualization. 
+* This merged dataframe was also plotted for visualization. 
 
 ### Load: the final database, tables/collections, and why this was chosen. ###
 
-We chose to load in to a relational database, postgreSQL, because both csv files had similar data and clearly related eachother
+* We chose to load in to a relational database, postgreSQL, because both csv files had similar data and clearly related eachother
 
-We created sql files to create the empty database and tables in pgAdmin. Next, we created a database connection using sqlalchemy. 
+* We created sql files to create the empty database and tables in pgAdmin. Next, we created a database connection using sqlalchemy. 
 To load the data in the database we used the pandas command df.to_sql()
 
-Finally, we were able to successfully query the database using pgAdmin to verify that the connection and loading was successful. 
+* Finally, we were able to successfully query the database using pgAdmin to verify that the connection and loading was successful. 
