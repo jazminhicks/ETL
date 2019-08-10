@@ -1,19 +1,11 @@
 # ETL
 
 
-## Project Proposal
-
-Before you start writing any code, remember that you only have one week to complete this project. View this project as a typical assignment from work. Imagine a bunch of data came in and you and your team are tasked with migrating it to a production data base.
-
-Take advantage of your Instructor and TA support during office hours and class project work time. They are a valuable resource and can help you stay on track.
-
 ## Finding Data
 
-* Dataset: Nutrition, Physical Activity and Obesity by State https://data.world/basilhayek/cdc-nutrition-physical-activity-and-obesity-by-state
+* Dataset: Women's Shoe Prices https://www.kaggle.com/datafiniti/womens-shoes-prices
 
 ## Data Cleanup & Analysis
-
-Once you have identified your datasets, perform ETL on the data. Make sure to plan and document the following:
 
 * The sources of data that you will extract from.
 
@@ -31,8 +23,35 @@ At the end of the week, your team will submit a Final Report that describes the 
 
 * **E**xtract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
 
+The dataset, Women's Shoe Prices, was sourced from https://www.kaggle.com/datafiniti/womens-shoes-prices. The data was formatted as 2 csv files. The csv files were downloaded to our local system and then extracted the csvs into a pandas dataframe. 
+
 * **T**ransform: what data cleaning or transformation was required.
+
+To transform the data we did the following:
+To clean up the data we...
+    * Removed duplicate rows
+    * Dropped unneeded columns
+    * Removed rows and columns with null values
+    * Renamed the columns that were kept to be more clear
+    * Changed all characters in the column "Brand" to all lowercase to ensure that all brands were properly grouped together
+    
+Next we aggregated the data by...
+    * Grouping by the column named "Brand" and queried the average max and min shoes prices
+    * This data was then sorted by price to find the top brand per that dataset
+   
+For visualization of the top brands by price, we also plotted this data into bar chart using Matplotlib
+
+The above was done for both datasets 1 and 2. 
+
+Lastly, to compare the information provided we merged the data files together. The first dataset contained shoe price informaiton for 2018 and the 2nd for 2019.
+
+This merged dataframe was also plotted for visualization. 
 
 * **L**oad: the final database, tables/collections, and why this was chosen.
 
-Please upload the report to Github and submit a link to Bootcampspot.
+We chose to load in to a relational database, postgreSQL, because both csv files had similar data and clearly related eachother
+
+We created sql files to create the empty database and tables in pgAdmin. Next, we created a database connection using sqlalchemy. 
+To load the data in the database we used the pandas command df.to_sql()
+
+Finally, we were able to successfully query the database using pgAdmin to verify that the connection and loading was successful. 
